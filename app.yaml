@@ -1,0 +1,12 @@
+application: double-goal-88320
+version: 1
+runtime: php55
+api_version: 1
+
+handlers:  
+  - url: .*
+    script: index.php
+
+env_variables:
+  GS_BUCKET_NAME: double-goal-88320
+  GS_FILENAME_FORMAT: gs://%s/photos/%s
